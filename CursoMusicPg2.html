@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><!--Aqui damos inicio a nossa pagina-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>CURSO PRÁTICO DE MÚSICA</title><!--Aqui fica o titulo da pagina.--->
+
+<style>
+.seçao1{
+  background-color: rgb(234, 241, 234);
+  display: flex; 
+  height: 80px;
+  justify-content: center; /*Coloca os elemntos do container no centro*/
+}
+.dev{
+background-color: #f1dbdb;
+height:50 px;
+
+}
+.container{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.h2{
+
+
+}
+
+h1{color:rgb(0, 7, 4);
+
+}
+article{
+ color:blue; 
+}
+a{
+display:block;
+}
+button{
+ color:black
+
+}
+figcaption{
+  color:gold
+}
+marquee{
+  color:black
+  whidt='00'
+}
+.zoom {
+	overflow: hidden;
+  background-color: rgb(150, 183, 212);
+}
+
+.zoom img {
+	max-width: 30%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+  margin: 0 auto;
+  justify-content: center;
+  
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.text-item {
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	bottom: 20px;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+.h1{
+  background-position: center center;
+
+
+}
+
+.tp-container{
+  justify-content: center;
+  display: flex;
+
+}
+
+.formulario{
+    width: 400px;
+    padding: 30px;
+    border:1px solid #ccc;
+}
+.formulario p{
+    width: 100%;
+    font-size: 1.5em;
+}
+.field{
+    width: 100%;
+    margin: 15px 0;
+}
+.field label, 
+.field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+    width: 100%;
+}
+.radiobox label{
+    width: auto;
+    display: inline-block;
+}
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input#nao{
+    margin-left: 30px;
+}
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+.figcaption{
+  color: black;
+}
+
+</style>
+
+
+<section>
+
+<div class="seçao1">
+<h1>Curso de Musica</h1>
+</div>
+
+</section>
+
+
+<section class = tp-container> 
+  
+   
+  
+    <div class = "zoom">
+    <img src="violão mão.jpg" class="img-responsive"title='Aulas para todas as idades'hspace='15px' hspace='10px' border='2px'algn='right' whidt='200'height='300'/>
+  
+  
+  
+    <img src="shildren.jpg" class="img-responsive"title='Aulas para todas as idades'hspace='15px' hspace='10px' border='2px'algn='right' whidt='200'height='300'/>
+  
+  
+    <img src="Canto_future.jfif" class="img-responsive"title='Aulas para todas as idades'hspace='15px' hspace='10px' border='2px'algn='right' whidt='200'height='300'/>
+  </div>
+
+</section>
+
+    <div class="text-item">
+      <h2></h2>
+    </div>
+  
+
+
+
+
+
+  <!--Aqui começa o menu do curso-->
+  <div class="dev">
+<h2> 
+  <nav>
+  <ul>
+    <li><a href="#violão">violão</a></li><!---Essa é uma maneira de criar um link no meu menu--->
+    <li><a href="#guitarra">guitarra</a></li>
+    <li><a href="#contrabaixo">contrabaixo</a></li>
+    <li><a href="#teclado">teclado</a></li>
+    <li><a href="#bateria">bateria</a></li>
+    <li><a href="#canto">canto</a></li>
+    <li><a href="#Teoria">Teoria Musical</a></li>
+    <li><a href="#sax">sax</a></li>
+    <li><a href="#clarinete">clarinete</a></li>
+    <li><a href="#flauta">flauta</a></li>
+  </ul>
+</nav>
+</h2>
+</div>
+
+<div class="form"> <!--Abertura da div-->
+  <h1>Faça sua inscrição no curso</h1><!--- Essa é uma tag de titulos--->
+
+  
+
+  <form class="formulario" method="post"> 
+    <p> Faça sua inscrição abaixo</p>
+    
+    <div class="field">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+    </div>
+    
+    <div class="field">
+        <label for="telefone">Seu Telefone:</label>
+        <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+    </div>
+
+    <div class="field">
+        <label for="email">Seu E-Mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+    </div>        
+    <div class="field radiobox">
+        <span>Deseja receber nossas novidades?</span>
+        <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+        <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+    </div>
+    <div class="field">
+        <label for="mensagem">Sua mensagem:</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+    </div>
+
+    <input type="submit" name="acao" value="Enviar">
+</form>
+
+  <marquee direcion='left'>O Melhor curso de musica da atualidade!!!</marquee> <!--Texto que se movimenta na tela para a esquerda.-->
+
+  <a href = "CursoMusicpg1.html" taret="_blanck">clique para voltar para a pagina1</a>
+  <br>
+  <a href = "CursoMusipag3.html" >clique para ir para a pagina3</a>
+  <br>
+
+Se inscreva no canal. <a href="http://www.youtube.com/channel/UCbtLmzoPY7BCvYoyger9-oQ?view_as=subscriber"target="_blanck">School Music</a>
+
+</head>
+
+  <script>
+  //var p1=document.getElementsByTagName('p')[1]
+  //window.document.write(p1.innertext)//vai escrever na tela o texto que a variavel pede para buscar.
+  //var name=window.prompt('qual é o seu nome')//vaiperguntar qual o seu nome
+  //window.alert('É um prazer te conhecer,' + name)//concatenaçao 
+  //Para comentar em javascript usamos essas duas barras diferentemente do HTML.
+ </script>
+
+  <article>
+<p>
+<h2>Prepare-se com qualidade e com os melhores professores.</h2>
+</p>
+  </article>
+</div> <!---fechamento da div-->
+<section  class = " container"> <!---Aqui temos uma seção que dividira a minha pagina--->
+
+  <div class= "g"> 
+   <!--A tagg title coloca um titulo em uma imagem quando o mouse para por cima dela-->
+  <p>O curso de música Apresntado tem certificação reconhecida pela <abbr title="Ordem dos Músicos do Brasil">OMB</abbr></p><!--a tag abbr é utilizada para a quando o mouse parar em uma abreviaçao mostrar o nome completo-->
+
+  
+  <figcaption>Todos os tipos de instrumentos </figcaption><!---essa tag é responsavel por colocarum titulo nas imagens-->
+  <img src='instrumentos.png' border ='3px' title='Aula de Todos os instrumentos musicais'  whidt='200'height='300' >
+  <img src='crianças.jpg' border ='3px' title='Aula de Todos os instrumentos musicais'  whidt='200'height='300' >
+  <img src='Sax .jpg' border ='3px' title='Aula de Todos os instrumentos musicais'  whidt='220'height='300' >
+  </div>
+
+ </section>
+
+ <section class = "container-one">
+   <div class = "container-flex"  >
+    <img src='' >
+    <img src='Studio.jpg'> 
+  </div>
+  </section>
+  
+
+
+
+</body>
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Musica</title>
+
+<style>
+    .sec1{
+        height: 50px;
+        background-color:coral;
+        display:flex;
+        }
+
+    h3{
+        color:white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-style:Arial;
+    }
+
+    .sec0{
+        background-color:rgb(3, 5, 8);
+        width: 100%;
+        height: 480px;
+        margin:0 auto;
+        background-image: url(logCurse.png);
+        background-size:200px; /*responsavel pelotamnho da logo do projeto*/
+        background-repeat: no-repeat;
+        background-position:center center; /*Alinhamento ao centro*/
+        display:flex;
+        padding: 0;
+    }
+
+    
+
+    .sec3{
+        width: 100px;
+        height: 100px;
+        background:rgb(79, 187, 151);
+        
+        left:500px;
+        top:400px;
+        position: absolute; 
+        display: flex; /*Organiza os elementos lado a lado*/
+        flex-wrap:nowrap;/*determinam a quebra de linha dos intens do containner,nowrap nao quebra a linha,wrap vai quebrar alinha*/
+       
+     
+        
+       
+     }
+    .sec4{
+        width: 100px;
+        height: 100px;
+        background:rgb(167, 58, 58);
+        left:650px;
+        top:400px;
+        position:absolute;
+        display: flex;
+        flex-wrap:nowrap;
+
+        
+
+       
+       
+
+
+    }
+    .sec5{
+        width: 100px;
+        height: 100px;
+        background:cornflowerblue;
+        display:flex;
+        left:800px;
+        top:400px;
+        position:absolute;
+        flex-wrap:nowrap;
+        
+    } 
+     .RP{
+         background-color:rgb(184, 184, 184) ;
+         font: #fff;
+         height: 100px;
+         justify-content: center;
+         
+         }
+
+         .BT{
+            background-color:coral;
+            width:100px;
+            height:35px ;
+            position: absolute;
+            right: 500px;
+            
+            display:inline-block;
+            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+}
+
+.inp{
+    height:29px ;
+    float:left;
+    width:400px ;
+    right: 500px;
+    position: absolute;
+    display:flex;
+}
+.container{
+    background-color:rgb(184, 184, 184) ;
+    
+        height: 200;
+       
+       display:flex;
+
+       flex-direction:row ; /*deixa os elementos alinhados em linhas,O direction colum deixa os elementos em colunas mudando o eixo principal de horizontal para vertical*/
+
+       flex-wrap: nowrap;
+
+       flex-flow:row nowrap;
+
+       justify-content:center;
+
+
+}
+
+    
+ </style>
+
+</head>
+
+<body><!-- a tag body representa o corpo da pagina-->
+    <section class='flex-container'>
+   
+     <div class ='sec1'> <h3>Curso de Musica</h3> </div>
+
+     <div class= 'sec0'> 
+        <div class = 'sec5'><h3>Todas as Idades</h3></div>
+
+        <div class = 'sec3'><h3>Estudio Prorpio</h3></div>
+    
+        <div class = 'sec4'><h3>Certificado de Conclusão</h3></div> <br> 
+    </div>
+
+    </section>
+
+
+    <section class= 'container'> 
+        <div class="RP"> <!--A tag footer é uma tag especifica para a criação de rodape da pagina-->
+
+        
+
+            <a href = "CursoMusicPg2.html" target="_blanck">clique aqui para ir para segunda pagina</a>  
+           
+        </div>
+
+
+    </section>
+
+   
+   
+
+   
+       
+   
+</body>
+</html>
